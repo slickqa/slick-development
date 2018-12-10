@@ -5,6 +5,4 @@ RUN apt-get update; apt-get --yes dist-upgrade; apt-get install --yes curl gnupg
 ENV GOPATH=/development/go
 ENV GOCACHE=/development/.cache/go-build
 
-RUN go get github.com/slickqa/slick; cd /development/go/src/github.com/slickqa/slick; make deps; cd ..; rm -rf slick
-
 ENV PATH=/development/go/bin:/usr/local/bin:/usr/bin/:/bin:/usr/local/sbin:/usr/sbin:/sbin
