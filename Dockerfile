@@ -4,5 +4,6 @@ RUN apt-get update; apt-get --yes dist-upgrade; apt-get install --yes curl gnupg
 
 ENV GOPATH=/development/go
 ENV GOCACHE=/development/.cache/go-build
+ENV npm_config_cache=/development/.cache/npm
 
 ENV PATH=/development/go/bin:/usr/local/bin:/usr/bin/:/bin:/usr/local/sbin:/usr/sbin:/sbin
